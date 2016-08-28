@@ -1,5 +1,5 @@
 var HTTPS = require('https');
-var cool = require('cool-ascii-faces');
+var cool = require('cool-ascii-faces'); /* honestly this is almost certainly unnecessary */
 
 var botID = process.env.BOT_ID;
 var offending_word;
@@ -14,6 +14,7 @@ function respond() {
     var words = request.text.split(" ");
     for (i = 0; i < words.length; i++) {
         if (botRegex.test(words[i])) {
+                /* removes non-alphanumeric chars and spaces from offending word */
                 offending_word = words[i].replace(/[^0-9a-z]/gi, '');
                 offending_word = offending_word.replace(/[^0-9a-z]/gi, '');
                 break;
