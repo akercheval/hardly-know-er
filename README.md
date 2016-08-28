@@ -13,15 +13,17 @@ repo with the `bot.js` file in the one here. That, honestly, should be it.
 
 ## Sample dialogue
 
-Keith: Hey, did you guys bring the water for today's football game?
+**Keith:** Hey, did you guys bring the water for today's football game?
 
-bot: water? I hardly know 'er!
+**bot:** water? I hardly know 'er!
 
-Juan: this bot is a monster
+**Juan:** this bot is a monster
 
-bot: monster? I hardly know 'er!
+**bot:** monster? I hardly know 'er!
 
-Alex: please remove this bot from the group.
+**Alex:** please remove this bot from the group.
+
+
 
 It's fun for the whole family!
 
