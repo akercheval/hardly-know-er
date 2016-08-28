@@ -1,3 +1,39 @@
+# A really terrible GroupMe pun bot
+
+For your viewing/playing around/annoying your friends pleasure, here's a GroupMe bot
+that, whenever any message is posted in its group that contains a word ending in "er,"
+will spit out that word and say "I hardly know 'er!"
+
+## Installation
+
+Really the easiest way to do this would be to go to [GroupMe's "coolguy" bot](https://github.com/groupme/bot-tutorial-nodejs)
+and follow their (beautifully clear) instructions for setup until everything is up and running
+as they've outlined it. Then, come back here and replace the `bot.js` file in your
+repo with the `bot.js` file in the one here. That, honestly, should be it.
+
+## Sample dialogue
+
+Keith: Hey, did you guys bring the water for today's football game?
+bot: water? I hardly know 'er!
+Juan: this bot is a monster
+bot: monster? I hardly know 'er!
+Alex: please remove this bot from the group.
+
+It's fun for the whole family!
+
+## Assorted notes
+
+  * The bot will only react to the first "er" word in a message
+  * It doesn't react to just the word "er" - that is, there needs to be at least
+    one letter before the er for the bot to pick it up and react
+  * Go crazy with caps; the bot doesn't care!
+
+## Thanks
+
+This bot is very much based on the sample GroupMe bot located [here](https://github.com/groupme/bot-tutorial-nodejs).
+The readme for that bot is included (unaltered) below.
+
+
 # Sample GroupMe NodeJS Callback Bot
 
 ## Introduction
