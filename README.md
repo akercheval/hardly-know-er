@@ -14,9 +14,13 @@ repo with the `bot.js` file in the one here. That, honestly, should be it.
 ## Sample dialogue
 
 Keith: Hey, did you guys bring the water for today's football game?
+
 bot: water? I hardly know 'er!
+
 Juan: this bot is a monster
+
 bot: monster? I hardly know 'er!
+
 Alex: please remove this bot from the group.
 
 It's fun for the whole family!
@@ -32,6 +36,8 @@ It's fun for the whole family!
 
 This bot is very much based on the sample GroupMe bot located [here](https://github.com/groupme/bot-tutorial-nodejs).
 The readme for that bot is included (unaltered) below.
+
+---------------------------------------------------------------------------------------------------------------------------
 
 
 # Sample GroupMe NodeJS Callback Bot
