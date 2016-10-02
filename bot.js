@@ -1,5 +1,5 @@
 var HTTPS = require('https');
-var cool = require('cool-ascii-faces'); /* honestly this is almost certainly unnecessary */
+var cool = require('cool-ascii-faces');
 
 var botID = process.env.BOT_ID;
 var offending_word;
@@ -8,20 +8,21 @@ var know_er = "? I hardly know 'er!";
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /\B(er|ER|eR|Er)\b(?!([?] I hardly know 'er!))/
+      botRegex =/((\B(er|ER|eR|Er)\b)|([Mm][Ii][Mm][Ii][Rr]))(?!([?] I hardly know 'er!))/
 
   if(request.text && botRegex.test(request.text)) {
     var words = request.text.split(" ");
     for (i = 0; i < words.length; i++) {
         if (botRegex.test(words[i])) {
-                /* removes non-alphanumeric chars and spaces from offending word */
                 offending_word = words[i].replace(/[^0-9a-z]/gi, '');
                 offending_word = offending_word.replace(/[^0-9a-z]/gi, '');
                 break;
         }
     }
     this.res.writeHead(200);
-    postMessage();
+    if(Math.floor((Math.random() * 5) + 1) === 2) {
+        postMessage();
+        }
     this.res.end();
   } else {
     console.log("don't care");
